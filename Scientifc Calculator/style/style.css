@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+
+}
+body{
+    font-family: sans-serif;
+    background-color: black;
+}
+  p{
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin: 10px;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.calculator{
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #8a817c;
+}
+#display{
+    margin: 0 10px;
+    height: 90px;
+    width: auto;
+    max-width: 270px;
+    background-color: rgb(20, 19, 19);
+    border: 5px solid rgb(248, 243, 243);
+   
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    font-weight: bold;
+    
+    margin-bottom: 20px;
+    overflow-x: scroll;
+
+}
+
+#display::-webkit-scrollbar{
+    display: block;
+    height: 3px;
+}
+button{
+    height: 57px;
+    width: 57px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 200ms ease;
+       
+}
+button:hover{
+    transform: scale(1.1);
+}
+
+button#equal{
+    height: 130px;
+
+}
+.calculator{
+    background-color:gray
+}
+.calculator #display{
+    color: #7fff00
+}
+.calculator button#clear {
+    background-color: #45df26;
+    color: #161515;
+
+}
+
+.calculator button.btn-number {
+    background-color: red;
+    color: #0e0f0e;
+}
+
+.calculator button.btn-operator {
+    background-color:yellow;
+    color: #070707;
+}
+
+.calculator button.btn-equal {
+    background-color: #1126e5;
+    color: #eee5e5;
+}
+
+.change button{
+    position: absolute;
+    top: 10px;
+    color: rgb(15, 15, 15);
+    
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+    
+}
+h3{
+    text-align: center;
+ margin: 5px;
+}
+
+@media screen and(min-width:200px) and (max-width:567px){
+    .container{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+}
